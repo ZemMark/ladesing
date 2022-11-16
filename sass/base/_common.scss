@@ -1,0 +1,32 @@
+body{
+    font-family: Roboto, sans-serif;
+    background-color: #ffffff;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+}
+.body.is-open{
+    overflow: hidden;
+}
+
+.list{
+    list-style: none;
+    margin: 0;
+    // padding: 0;
+}
+
+.link{
+    text-decoration: none;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    cursor: pointer;
+}
+
+a {
+    
+    cursor: pointer;
+    text-decoration: inherit;
+}
