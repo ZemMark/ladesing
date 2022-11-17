@@ -1,11 +1,46 @@
 .header-hero{
   height: 600px;
   background-size: contain;
-  background-image: linear-gradient( to top,rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) ,url("../img/hero-320@1x.jpg");
+  background: linear-gradient( to top,rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) ,url("../img/hero-320@1x.jpg");
 }
 .header{
   display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 70px;
-  border-bottom: 1px solid #fff;
+  // border-bottom: 1px solid #fff;
+  &::after{
+    content: "";
+    display: block;
+    width: 320px;
+    height: 1px;
+    background-color: #878787;
+    top: 70px;
+    left: 0;
+    position: absolute;
+  }
+  &__menu-button{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+  }
+  &__contact{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+      font-size: 16px;
+      line-height: 1.87;
+      /* identical to box height */
+    
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    
+      color: #FFFFFF;
+  }
+  &__phone-icon{
+    margin-right: 10px;
+  }
+
 }

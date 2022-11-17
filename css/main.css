@@ -78,17 +78,97 @@ p {
 .header-hero {
   height: 600px;
   background-size: contain;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/hero-320@1x.jpg");
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/hero-320@1x.jpg");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/hero-320@1x.jpg");
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/hero-320@1x.jpg");
 }
 
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: 70px;
-  border-bottom: 1px solid #fff;
+}
+.header::after {
+  content: "";
+  display: block;
+  width: 320px;
+  height: 1px;
+  background-color: #878787;
+  top: 70px;
+  left: 0;
+  position: absolute;
+}
+.header__menu-button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+.header__contact {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.header__phone-icon {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 290px;
+    margin: 0 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    width: 320px;
+  }
+}
+
+.hero__title {
+  padding-top: 94px;
+  font-family: "Roboto Condensed", "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.hero__subtitle {
+  margin-top: 10px;
+  font-family: "Roboto Condensed", "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  /* or 150% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */

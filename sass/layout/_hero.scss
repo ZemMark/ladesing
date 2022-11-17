@@ -1,0 +1,30 @@
+.hero{
+  &__title{
+    padding-top: 94px;
+    font-family: 'Roboto Condensed', "Roboto", sans-serif;
+      font-weight: 300;
+      font-size: 60px;
+      line-height: 1.16;
+      text-align: center;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    
+      color: #FFFFFF;
+  }
+  &__subtitle{
+    margin-top: 10px;
+    font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.5;
+      /* or 150% */
+    
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    
+      color: #FFFFFF;
+  }
+}
