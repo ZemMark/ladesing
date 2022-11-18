@@ -1,24 +1,16 @@
-.header-hero{
-  height: 600px;
-  background-size: contain;
-  background: linear-gradient( to top,rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) ,url("../img/hero-320@1x.jpg");
-}
+// .header-hero{
+//   height: 600px;
+//   background-size: contain;
+//   background: linear-gradient( to top,rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) ,url("../img/hero-320@1x.jpg");
+// }
 .header{
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 70px;
   // border-bottom: 1px solid #fff;
-  &::after{
-    content: "";
-    display: block;
-    width: 320px;
-    height: 1px;
-    background-color: #878787;
-    top: 70px;
-    left: 0;
-    position: absolute;
-  }
+  
   &__menu-button{
     border: none;
     background-color: transparent;

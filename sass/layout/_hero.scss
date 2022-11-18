@@ -1,6 +1,19 @@
 .hero{
+  padding-top: 164px;
+    height: 600px;
+      background-size: contain;
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/hero2x-320.jpg");
+  &::after {
+      content: "";
+      display: block;
+      width: 320px;
+      height: 1px;
+      background-color: #878787;
+      top: 70px;
+      left: 0;
+      position: absolute;
+    }
   &__title{
-    padding-top: 94px;
     font-family: 'Roboto Condensed', "Roboto", sans-serif;
       font-weight: 300;
       font-size: 60px;

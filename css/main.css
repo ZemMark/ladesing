@@ -75,14 +75,8 @@ p {
   margin-bottom: 0;
 }
 
-.header-hero {
-  height: 600px;
-  background-size: contain;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/hero-320@1x.jpg");
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/hero-320@1x.jpg");
-}
-
 .header {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,16 +87,6 @@ p {
       -ms-flex-align: center;
           align-items: center;
   height: 70px;
-}
-.header::after {
-  content: "";
-  display: block;
-  width: 320px;
-  height: 1px;
-  background-color: #878787;
-  top: 70px;
-  left: 0;
-  position: absolute;
 }
 .header__menu-button {
   border: none;
@@ -143,8 +127,24 @@ p {
   }
 }
 
+.hero {
+  padding-top: 164px;
+  height: 600px;
+  background-size: contain;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/hero2x-320.jpg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/hero2x-320.jpg");
+}
+.hero::after {
+  content: "";
+  display: block;
+  width: 320px;
+  height: 1px;
+  background-color: #878787;
+  top: 70px;
+  left: 0;
+  position: absolute;
+}
 .hero__title {
-  padding-top: 94px;
   font-family: "Roboto Condensed", "Roboto", sans-serif;
   font-weight: 300;
   font-size: 60px;
