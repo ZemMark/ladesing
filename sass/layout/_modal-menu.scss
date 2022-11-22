@@ -1,0 +1,10 @@
+.modal-menu{
+  position: absolute;
+  top: 100%;
+}
+.modal-menu.is-hidden{
+  opacity: 0;
+}
+.modal-menu.is-hidden .header__button-close{
+  fill: transparent;
+}

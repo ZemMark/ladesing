@@ -1,21 +1,29 @@
 .team{
   margin-top: 69px;
-  border-bottom: 1px solid red($color: #000000);
+  // border-bottom: 1px solid red($color: #000000);
   &__title{
     min-width: 291px;
     @include h2_40;
+    @media screen and (min-width:720px) {
+    
+        font-family: 'Roboto Condensed';
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 1.17;
+        /* identical to box height */
+    
+        align-items: center;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    
+    
+      }
   }
   &__subtitle{
     margin-top: 23px;
-    &::after{
-      content: '';
-      margin-top: 39px;
-      display: block;
-      // position: absolute;
-      height: 1px;
-      width: 100%;
-      background-color: $lines-color;
-      }
     @include subtitle18;
+    @media screen and (min-width: 768px) {
+      line-height: 1.5;
+    }
   }
 }

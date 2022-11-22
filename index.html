@@ -37,9 +37,17 @@
       </a>
       <button class="header__menu-button">
         <svg class="header__menu-icon" width="40" height="30">
-          <use href="./symbol-defs.svg#menu_burger"></use>
+          <use class="header__button-open" href="./symbol-defs.svg#menu_burger" data-modal-open5></use>
+          <use class="header__button-close" href="./symbol-defs.svg#close-button" data-modal-close5></use>
         </svg>
       </button>
+    </div>
+    <div class="modal-menu is-hidden" data-modal5>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link">портфолио</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">услуги и цены</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">контакты</a></li>
+      </ul>
     </div>
   </header>
 
@@ -70,49 +78,65 @@
     <div class="container">
 
       <ul class="work__list">
-        <li class="work__item">
-          <a href="" class="">
-            <div class="work__title-box">
-              <h3 class="work__title">каждый проект уникален</h3>
-              <svg class="work__icon" width="30" , height="30">
-                <use class="work__icon-use" href="./symbol-defs.svg#arrow-up"> </use>
-              </svg>
-            </div>
-            <p class=" work__subtitle">Дизайнеры и архитекторы студии не работают по шаблону, учитывают все пожелания
-              и не копируют работы из чужих портфолио</p>
-          </a>
+        <li class="work__item" data-modal-open>
+          <div class="work__title-box">
+            <h3 class="work__title">каждый проект уникален</h3>
+            <svg class="work__icon" width="30" , height="30">
+              <use class="work__icon-use" href="./symbol-defs.svg#arrow-down"> </use>
+            </svg>
+          </div>
+          <p class=" work__subtitle is-hidden" data-modal>Дизайнеры и архитекторы студии не работают по шаблону,
+            учитывают все
+            пожелания
+            и не копируют работы из чужих портфолио</p>
         </li>
-        <li class="work__item">
-          <a href="" class="work__link">
+        <li class="work__item" data-modal-open1>
+          <div class="work__title-box">
             <h3 class="work__title">полное сопровождение</h3>
             <svg class="work__icon" width="30" , height="30">
               <use class="work__icon-use" href="./symbol-defs.svg#arrow-down"> </use>
             </svg>
-          </a>
+          </div>
+          <p class=" work__subtitle is-hidden" data-modal1>Дизайнеры и архитекторы студии не работают по шаблону,
+            учитывают все
+            пожелания
+            и не копируют работы из чужих портфолио</p>
         </li>
-        <li class="work__item">
-          <a href="" class="work__link">
+        <li class="work__item" data-modal-open2>
+          <div class="work__title-box">
             <h3 class="work__title">согласование перепланировки</h3>
             <svg class="work__icon" width="30" , height="30">
               <use class="work__icon-use" href="./symbol-defs.svg#arrow-down"> </use>
             </svg>
-          </a>
+          </div>
+          <p class=" work__subtitle is-hidden" data-modal2>Дизайнеры и архитекторы студии не работают по шаблону,
+            учитывают все
+            пожелания
+            и не копируют работы из чужих портфолио</p>
         </li>
-        <li class="work__item">
-          <a href="" class="work__link">
+        <li class="work__item" data-modal-open3>
+          <div class="work__title-box">
             <h3 class="work__title">техническая документация</h3>
             <svg class="work__icon" width="30" , height="30">
               <use class="work__icon-use" href="./symbol-defs.svg#arrow-down"> </use>
             </svg>
-          </a>
+          </div>
+          <p class=" work__subtitle is-hidden" data-modal3>Дизайнеры и архитекторы студии не работают по шаблону,
+            учитывают все
+            пожелания
+            и не копируют работы из чужих портфолио</p>
         </li>
-        <li class="work__item">
-          <a href="" class="work__link">
+        <li class="work__item" data-modal-open4>
+          <div class="work__title-box">
             <h3 class="work__title">строгая политика конфиденциальности</h3>
             <svg class="work__icon" width="30" , height="30">
               <use class="work__icon-use" href="./symbol-defs.svg#arrow-down"> </use>
             </svg>
-          </a>
+          </div>
+          <p class=" work__subtitle is-hidden" data-modal4>Дизайнеры и архитекторы студии не работают по шаблону,
+            учитывают все
+            пожелания
+            и не копируют работы из чужих портфолио</p>
         </li>
       </ul>
     </div>
@@ -123,7 +147,12 @@
 
 
 
-
+  <script src="./js/modal.js"></script>
+  <script src="./js/modal1.js"></script>
+  <script src="./js/modal2.js"></script>
+  <script src="./js/modal3.js"></script>
+  <script src="./js/modal4.js"></script>
+  <script src="./js/modal5.js"></script>
 </body>
 
 </html>
