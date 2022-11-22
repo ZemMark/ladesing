@@ -1,18 +1,48 @@
 .work__title-box{
   display: flex;
+  align-items: center;
 }
 .work{
   &__list{
     margin: 27px 0 25px 0;
   }
+  &__link{
+    display: flex;
+    align-items: center;
+  }
+  
+  &__item::after{
+        content: "";
+          margin-top: 28px;
+          margin-bottom: 28px;
+          display: block;
+          height: 1px;
+          width: 100%;
+          background-color: #d5d5d5;
+
+  }
+
+  &__icon{
+    fill:#fff;
+    border: 1px solid $lines-color;
+    border-radius: 50%;
+    transition: border-color 500ms ease-in-out;
+
+  }
+  &__icon:hover,
+  &__icon:active,
+  &__icon:focus{
+    border-color: $title-color;
+  }
 
   &__title{
     @include h3;
     margin-right: auto;
+        width: 50%;
   }
   &__subtitle{
     margin-top: 13px;
-    @include subtitle18;
+    @include subtitle16;
   }
   
 }
