@@ -1,5 +1,19 @@
 .section {
   @media screen and (max-width: 768px) {
-    width: 320px;
+    // width: 320px;
+  }
+  @media screen and (min-width: 768px) {
+    // width: 678px;
+    // margin: 0 45px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    // width: 930px;
+    // margin: 0 47px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    // width: 1200px;
+    // margin: 0 360px;
   }
 }

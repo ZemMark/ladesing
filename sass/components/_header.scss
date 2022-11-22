@@ -6,16 +6,55 @@
 .header{
   position: absolute;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 70px;
-  // border-bottom: 1px solid #fff;
+  
+  
+  width: 100%;
+  
+  z-index: 9999;
+  &__container{
+    width: 100%;
+    margin: 0 auto;
+      
+    display: flex;
+    
+    justify-content: space-between;
+  }
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    
+  }
+
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    
+    height: 105px;
+    height: 105px;
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1920px) {
+    align-items: center;
+    
+  }
+  &__logo{
+    @media screen and (min-width: 768px) {
+      margin-right: auto;
+    }
+  }
   
   &__menu-button{
     border: none;
     background-color: transparent;
     padding: 0;
     margin: 0;
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
   }
   &__contact{
     font-family: 'Roboto Condensed', sans-serif;
@@ -30,6 +69,14 @@
       text-transform: uppercase;
     
       color: #FFFFFF;
+
+      @media screen and (min-width: 768px){
+        margin-right: 80px;
+
+      }
+      @media screen and (min-width: 1024px) {
+        margin-right: 0;
+      }
   }
   &__phone-icon{
     margin-right: 10px;

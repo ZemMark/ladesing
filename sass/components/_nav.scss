@@ -1,0 +1,32 @@
+.nav{
+  margin-right: 95px;
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1920px) {
+    margin-right: 229px;
+  }
+  &__list{
+    display: flex;
+  
+  }
+  &__link{
+    font-family: 'Roboto Condensed';
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      
+      color: #FFFFFF;
+      
+    }
+    &__item{
+      display: flex;
+      align-items: center;
+      text-align: center;
+  }
+  &__item:not(:last-child){
+    margin-right: 50px;
+  }
+}

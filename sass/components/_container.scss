@@ -1,6 +1,26 @@
 .container{
-  @media screen and (max-width: 768px) {
-      width: 290px;
-      margin: 0 15px;
+  width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    // position: relative;
+  // position: relative;
+  // display: flex;
+  @media screen and (max-width: 767px) {
+      min-width: 290px;
+
     }
+  @media screen and (min-width: 768px) {
+      min-width: 678px;
+      padding: 0 45px 0 45px;
+    }
+  @media screen and (min-width: 1024px) {
+      width: 930px;
+      padding: 0 47px;
+    }
+  @media screen and (min-width: 1920px) {
+      width: 1200px;
+      padding: 0 360px;
+    }
+  
 }

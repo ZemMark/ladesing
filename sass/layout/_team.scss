@@ -1,0 +1,21 @@
+.team{
+  margin-top: 69px;
+  border-bottom: 1px solid red($color: #000000);
+  &__title{
+    min-width: 291px;
+    @include h2_40;
+  }
+  &__subtitle{
+    margin-top: 23px;
+    &::after{
+      content: '';
+      margin-top: 39px;
+      display: block;
+      // position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: $lines-color;
+      }
+    @include subtitle18;
+  }
+}

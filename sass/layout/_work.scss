@@ -1,0 +1,18 @@
+.work__title-box{
+  display: flex;
+}
+.work{
+  &__list{
+    margin: 27px 0 25px 0;
+  }
+
+  &__title{
+    @include h3;
+    margin-right: auto;
+  }
+  &__subtitle{
+    margin-top: 13px;
+    @include subtitle18;
+  }
+  
+}

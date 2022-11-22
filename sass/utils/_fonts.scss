@@ -1,0 +1,51 @@
+@mixin subtitle18 {
+  font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+    /* or 150% */
+  
+    align-items: center;
+  
+  
+    color: $subtitle18-color;
+}
+@mixin h2_40 {
+  font-family: 'Roboto Condensed';
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1.2;
+  
+    align-items: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $title-color;
+    @media screen and (min-width:720px) {
+      
+      font-family: 'Roboto Condensed';
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 1.17;
+        /* identical to box height */
+      
+        align-items: center;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      
+      
+    }
+
+}
+@mixin h3{
+  font-family: 'Roboto Condensed';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.35;
+  
+    align-items: center;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  
+  
+    color: $title-color;
+}
