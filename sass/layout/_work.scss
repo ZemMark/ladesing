@@ -12,6 +12,7 @@
   }
   &__item{
     padding-top: 28px;
+    height: 80px;
   }
   &__link{
     display: flex;
@@ -70,11 +71,10 @@
   &__subtitle{
         @include subtitle16;
         margin-top: 13px;
-  }
-  &__subtitle.is-hidden{
-    opacity: 1;
-    overflow: hidden;
-    transform: translateX(1000%);
+        opacity: 1;
+      }
+      &__subtitle.is-hidden{
+        display: none;
   }
 }
 

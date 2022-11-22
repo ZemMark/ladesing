@@ -428,6 +428,7 @@ p {
 }
 .work__item {
   padding-top: 28px;
+  height: 80px;
 }
 .work__link {
   display: -webkit-box;
@@ -516,12 +517,10 @@ p {
   text-transform: uppercase;
   color: #3D3D3D;
   margin-top: 13px;
+  opacity: 1;
 }
 .work__subtitle.is-hidden {
-  opacity: 1;
-  overflow: hidden;
-  -webkit-transform: translateX(1000%);
-          transform: translateX(1000%);
+  display: none;
 }
 
 .modal-menu {
@@ -533,6 +532,14 @@ p {
   opacity: 0;
 }
 
+.modal-menu .header__button-open {
+  display: none;
+}
+
 .modal-menu.is-hidden .header__button-close {
   fill: transparent;
+}
+
+.modal-menu.is-hidden .header__button-open {
+  display: block;
 }/*# sourceMappingURL=main.css.map */

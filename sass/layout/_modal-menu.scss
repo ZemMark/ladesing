@@ -5,6 +5,12 @@
 .modal-menu.is-hidden{
   opacity: 0;
 }
+.modal-menu .header__button-open{
+  display: none;
+}
 .modal-menu.is-hidden .header__button-close{
   fill: transparent;
+}
+.modal-menu.is-hidden .header__button-open{
+  display: block;
 }
