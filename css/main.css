@@ -29,6 +29,8 @@ body {
 
 button {
   cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 a {
@@ -428,7 +430,6 @@ p {
 }
 .work__item {
   padding-top: 28px;
-  height: 80px;
 }
 .work__link {
   display: -webkit-box;
@@ -471,26 +472,6 @@ p {
 .work__item:active .work__icon {
   border-color: #3D3D3D;
 }
-@-webkit-keyframes rotating {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-}
-@keyframes rotating {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-}
 .work__title {
   font-family: "Roboto Condensed";
   font-weight: 300;
@@ -505,6 +486,20 @@ p {
   margin-right: auto;
   width: 50%;
 }
+@media screen and (min-width: 768px) {
+  .work__title {
+    font-family: "Roboto Condensed" sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.35;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #3D3D3D;
+  }
+}
 .work__subtitle {
   font-family: "Roboto Condensed";
   font-weight: 300;
@@ -517,8 +512,9 @@ p {
   text-transform: uppercase;
   color: #3D3D3D;
   margin-top: 13px;
-  opacity: 1;
+  display: block;
 }
+
 .work__subtitle.is-hidden {
   display: none;
 }
@@ -528,18 +524,42 @@ p {
   top: 100%;
 }
 
+.modal__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .modal-menu.is-hidden {
   opacity: 0;
 }
 
 .modal-menu .header__button-open {
   display: none;
+  position: absolute;
 }
 
-.modal-menu.is-hidden .header__button-close {
-  fill: transparent;
+.header__menu-button-close {
+  display: block;
+  position: absolute;
 }
 
 .modal-menu.is-hidden .header__button-open {
+  display: block;
+}
+
+.header__menu-button {
+  top: 26px;
+  right: 15px;
+}
+
+.modal-menu .header__menu-button-close {
+  position: absolute;
+  top: 20px;
+  right: 22px;
   display: block;
 }/*# sourceMappingURL=main.css.map */

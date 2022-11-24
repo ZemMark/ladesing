@@ -2,15 +2,35 @@
   position: absolute;
   top: 100%;
 }
+.modal__list{
+  display: flex;
+  flex-direction: column ;
+
+}
 .modal-menu.is-hidden{
   opacity: 0;
 }
 .modal-menu .header__button-open{
   display: none;
+  position: absolute;
 }
-.modal-menu.is-hidden .header__button-close{
-  fill: transparent;
+.header__menu-button-close{
+  display: block;
+  position: absolute;
+
 }
 .modal-menu.is-hidden .header__button-open{
   display: block;
 }
+.header__menu-button{
+  top: 26px;
+  right: 15px;
+
+}
+.modal-menu .header__menu-button-close{
+  position: absolute;
+    top: 20px;
+    right: 22px;
+    display: block;
+}
+
