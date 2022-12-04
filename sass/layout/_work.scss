@@ -44,10 +44,8 @@
     fill:#fff;
     border: 1px solid $lines-color;
     border-radius: 50%;
-    transition: border-color 500ms ease-in-out;
-    animation: rotating 2s linear infinite;
-    animation-iteration-count: 1;
   }
+  
 
   &__item:active .work__icon{
     border-color: $title-color;
@@ -71,5 +69,6 @@
   .work__subtitle.is-hidden{
     display: none;
   }
+
 
 
