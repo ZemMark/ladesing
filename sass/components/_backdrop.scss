@@ -1,0 +1,12 @@
+.backdrop.is-shown{
+  opacity: 1;
+  
+}
+.backdrop{
+  width: 100vw;
+  height: 100vh;
+  background-color: $backdrop;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
