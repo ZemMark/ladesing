@@ -42,26 +42,26 @@ transition: opacity $transition;
 
 
 
-.header__menu-button{
+.site-nav__menu-button{
   border: none;
-  background-color: transparent;
+  // background-color: transparent;
   margin: 0;
   padding: 0;
   
 }
-.header__menu-button .icon__close{
+.site-nav__menu-button .icon__close{
   display: none;
   background-color: #fff;
 
 }
-.header__menu-button.is-open .icon__close{
+.site-nav__menu-button.is-open .icon__close{
   display: block;
 }
-.header__menu-button.is-open .icon__menu{
+.site-nav__menu-button.is-open .icon__menu{
   display: none;
 }
 
 
-.header__menu-button.is-open .menu{
+.site-nav__menu-button.is-open .menu{
   pointer-events: all;
 }

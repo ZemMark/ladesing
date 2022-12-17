@@ -1,10 +1,10 @@
 // const header = document.querySelector("[data-header]");
 const openMenuBtn = document.querySelector("[data-header-bgc]");
-const header = document.querySelector("[data-header]");
+const siteNav = document.querySelector("[data-header]");
 const bodyTag = document.querySelector("body");
 
 openMenuBtn.addEventListener("click", function () {
-  header.classList.toggle("bgc");
+  siteNav.classList.toggle("bgc");
 });
 
 // openMenuBtn.addEventListener("click", () => {

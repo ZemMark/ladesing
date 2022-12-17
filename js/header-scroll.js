@@ -17,9 +17,9 @@
 //   // header.classList.toggle("set-white");
 // });
 
-const headerScroll = document.querySelector("header");
+const headerScroll = document.querySelector("nav");
 const sectionOne = document.querySelector(".home-intro");
-const logoScroll = document.querySelector(".header__logo-icon");
+const logoScroll = document.querySelector(".site-nav__logo-icon");
 const menuScroll = document.querySelector(".icon__menu");
 
 const sectionOneOptions = { rootMargon: "-500px 0px 0px 0px" };
@@ -29,7 +29,7 @@ const sectionOneObserver = new IntersectionObserver(function (
   sectionOneObserver
 ) {
   entries.forEach((entry) => {
-    // console.log(entry.target);
+    console.log(entry.target);
     if (!entry.isIntersecting) {
       headerScroll.classList.add("set-white");
       logoScroll.classList.add("logo-scrolled");

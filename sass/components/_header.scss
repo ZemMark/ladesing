@@ -3,21 +3,34 @@
 //   background-size: contain;
 //   background: linear-gradient( to top,rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) ,url("../img/hero-320@1x.jpg");
 // }
-.header.set-white{
+.sit-nav.set-white{
   background-color: palegreen;
   color: #000;
 }
 .header{
+
+  
   position: fixed;
-  display: flex;
-  align-items: center;
   height: 70px;
   background: transparent;
-  
   width: 100%;
+
+  &__container {
+      height: 100%;
+      width: 100%;
+      margin: 0 auto;
   
-  z-index: 9999;
+      display: flex;
+  
+      justify-content: space-between;
+    }
+}
+.site-nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
   transition: background-color $transition;
+  
   &__logo-icon{
     fill: #FFFFFF;
   }
@@ -26,14 +39,6 @@
   }
   &.bgc{
     background-color: black;
-  }
-  &__container{
-    width: 100%;
-    margin: 0 auto;
-      
-    display: flex;
-    
-    justify-content: space-between;
   }
   @media screen and (max-width: 767px) {
     justify-content: space-between;
