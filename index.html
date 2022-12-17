@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-html>
 
 <head>
   <meta charset="UTF-8">
@@ -14,12 +14,12 @@
 
 </head>
 
-<body>
+<body data-body>
 
-  <header class="header" data-header>
+  <header class="header .js-header" data-header>
     <div class="header__container">
       <a href="" class="header__logo">
-        <svg class="header__logo-icon" width="30" height="30" fill="#fff">
+        <svg class="header__logo-icon" width="30" height="30">
           <use href="./symbol-defs.svg#logo"></use>
         </svg>
       </a>
@@ -65,7 +65,11 @@
 
   </header>
 
-  <section class="hero">
+  <!-- backdrop -->
+  <div class="backdrop" data-backdrop></div>
+
+
+  <section class="hero home-intro">
     <div class="container">
       <ul class="hero__list">
         <li class="">
@@ -174,6 +178,24 @@
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
+  <script>
+    // const headerTag = document.querySelector(['.backdrop'])
+
+    // window.addEventListener('scroll', () => {
+    //   const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+
+    //   const scrolled = window.scrollY;
+    //   // console.log(scrollable);
+
+
+    //   if ()
+      // console.log('Scrolled');
+      // header.classList.toggle("set-white");
+      // ('.backdrop').classList.toggle('is-shown');
+
+
+    // });
+  </script>
 
   <script src="./js/modal.js"></script>
   <script src="./js/modal1.js"></script>
@@ -182,6 +204,7 @@
   <script src="./js/modal4.js"></script>
   <script src="./js/menu.js"></script>
   <script src="./js/header.js"></script>
+  <script src="./js/header-scroll.js"></script>
 </body>
 
 </html>

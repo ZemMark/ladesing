@@ -3,17 +3,27 @@
 //   background-size: contain;
 //   background: linear-gradient( to top,rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) ,url("../img/hero-320@1x.jpg");
 // }
+.header.set-white{
+  background-color: palegreen;
+  color: #000;
+}
 .header{
   position: fixed;
   display: flex;
   align-items: center;
   height: 70px;
-  
+  background: transparent;
   
   width: 100%;
   
   z-index: 9999;
   transition: background-color $transition;
+  &__logo-icon{
+    fill: #FFFFFF;
+  }
+  &__logo-icon.logo-scrolled{
+    fill: #000;
+  }
   &.bgc{
     background-color: black;
   }

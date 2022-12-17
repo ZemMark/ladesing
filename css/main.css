@@ -75,6 +75,11 @@ p {
   margin-bottom: 0;
 }
 
+.header.set-white {
+  background-color: palegreen;
+  color: #000;
+}
+
 .header {
   position: fixed;
   display: -webkit-box;
@@ -84,10 +89,17 @@ p {
       -ms-flex-align: center;
           align-items: center;
   height: 70px;
+  background: transparent;
   width: 100%;
   z-index: 9999;
   -webkit-transition: background-color 300ms linear;
   transition: background-color 300ms linear;
+}
+.header__logo-icon {
+  fill: #FFFFFF;
+}
+.header__logo-icon.logo-scrolled {
+  fill: #000;
 }
 .header.bgc {
   background-color: black;
