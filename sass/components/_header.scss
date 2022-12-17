@@ -13,6 +13,10 @@
   width: 100%;
   
   z-index: 9999;
+  transition: background-color $transition;
+  &.bgc{
+    background-color: black;
+  }
   &__container{
     width: 100%;
     margin: 0 auto;

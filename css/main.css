@@ -86,6 +86,11 @@ p {
   height: 70px;
   width: 100%;
   z-index: 9999;
+  -webkit-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+}
+.header.bgc {
+  background-color: black;
 }
 .header__container {
   width: 100%;
@@ -515,7 +520,8 @@ p {
   display: none;
 }
 
-.menu__list {
+.menu {
+  pointer-events: none;
   position: all;
   opacity: 0;
   width: 100%;
@@ -535,12 +541,15 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: black;
-  z-index: 1;
+  z-index: 999;
+  -webkit-transition: opacity 300ms linear;
+  transition: opacity 300ms linear;
 }
-.menu__list.is-open {
+.menu.is-open {
   opacity: 1;
+  pointer-events: all;
 }
-.menu__list::before {
+.menu::before {
   content: "";
   display: block;
   width: 100%;
@@ -576,10 +585,6 @@ p {
 
 .header__menu-button.is-open .icon__menu {
   display: none;
-}
-
-.menu {
-  pointer-events: none;
 }
 
 .header__menu-button.is-open .menu {
