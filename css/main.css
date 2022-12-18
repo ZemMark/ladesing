@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: Roboto, sans-serif;
   background-color: #ffffff;
@@ -612,4 +613,69 @@ p {
 
 .site-nav__menu-button.is-open .menu {
   pointer-events: all;
+}
+
+/* Слайдер */
+.slick-slider {
+  padding: 0 15px;
+}
+
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Слайд */
+.slick-slide {
+  width: 100%;
+  display: block;
+}
+
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.filter-item {
+  min-width: 0;
+}
+
+.filter .slick-arrow {
+  display: none;
+  font-size: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.filter-link {
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */

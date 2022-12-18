@@ -22,7 +22,7 @@ const sectionOne = document.querySelector(".home-intro");
 const logoScroll = document.querySelector(".site-nav__logo-icon");
 const menuScroll = document.querySelector(".icon__menu");
 
-const sectionOneOptions = { rootMargon: "-500px 0px 0px 0px" };
+const sectionOneOptions = { rootMargon: "-10px 0px 0px 0px" };
 
 const sectionOneObserver = new IntersectionObserver(function (
   entries,
