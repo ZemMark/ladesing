@@ -41,6 +41,9 @@
   }
 
   &__icon{
+    z-index: 1;
+    position: absolute;
+    right: 10px;
     fill:#fff;
     border: 1px solid $lines-color;
     border-radius: 50%;
