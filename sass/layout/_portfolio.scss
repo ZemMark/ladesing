@@ -1,0 +1,13 @@
+.portfolio{
+  &__title{
+    font-family: 'Roboto Condensed';
+      // font-style: normal;
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 1.2;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-align: $title-color;
+      text-align: center;
+  }
+}

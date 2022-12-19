@@ -1,7 +1,7 @@
 /* Слайдер */
 
 .slick-slider {
-  padding: 0 15px;
+  padding: 10px 0;
 }
 
 /* Слайдер запущен */
@@ -23,7 +23,7 @@
 
 /* Слайд */
 .slick-slide {
-  width: 100%;
+  min-width: 0;
   display: block;
 }
 
@@ -64,12 +64,19 @@
 
 
 .filter{
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
 }
 
 .filter-item{
-  min-width: 0;
+  min-width: 100px;
+  margin-right: 20px;
+  
+}
+.filter-item:last-child{
+  min-width: 400px;
+  margin-left: -42px;
+  
 }
 
 .filter .slick-arrow{
@@ -88,4 +95,5 @@
     text-align: center;
     letter-spacing: 0.15em;
     text-transform: uppercase;
+    color: $title-color;
 }

@@ -1,9 +1,9 @@
 $(document).ready(function () {
   $(".filter").slick({
     arrows: false,
-    dosts: false,
-    slidesToShow: 3.4,
-    slidesToScoll: 3,
+    // dosts: true,
+    slidesToShow: 3,
+    slidesToScoll: 5,
     infinite: false,
   });
 });

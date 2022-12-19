@@ -617,7 +617,7 @@ p {
 
 /* Слайдер */
 .slick-slider {
-  padding: 0 15px;
+  padding: 10px 0;
 }
 
 /* Слайдер запущен */
@@ -636,7 +636,7 @@ p {
 
 /* Слайд */
 .slick-slide {
-  width: 100%;
+  min-width: 0;
   display: block;
 }
 
@@ -651,16 +651,14 @@ p {
 /* Точки (булиты) */
 /* Активная точка */
 /* Элемент точки */
-.filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.filter-item {
+  min-width: 100px;
+  margin-right: 20px;
 }
 
-.filter-item {
-  min-width: 0;
+.filter-item:last-child {
+  min-width: 400px;
+  margin-left: -42px;
 }
 
 .filter .slick-arrow {
@@ -678,4 +676,16 @@ p {
   text-align: center;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+  color: #3D3D3D;
+}
+
+.portfolio__title {
+  font-family: "Roboto Condensed";
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: #3D3D3D;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
