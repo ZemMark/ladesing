@@ -21,6 +21,7 @@ const headerScroll = document.querySelector("nav");
 const sectionOne = document.querySelector(".home-intro");
 const logoScroll = document.querySelector(".site-nav__logo-icon");
 const menuScroll = document.querySelector(".icon__menu");
+const menuIconBlack = document.querySelector(".icon__menu-black");
 
 const sectionOneOptions = { rootMargon: "-10px 0px 0px 0px" };
 
@@ -33,11 +34,15 @@ const sectionOneObserver = new IntersectionObserver(function (
     if (!entry.isIntersecting) {
       headerScroll.classList.add("set-white");
       logoScroll.classList.add("logo-scrolled");
-      menuScroll.classList.add("logo-scrolled");
+      menuScroll.classList.add("menu-icon-hidden");
+      menuIconBlack.classList.remove("menu-icon-hidden");
+      menuIconBlack.classList.add("menu-icon-shown");
     } else {
       headerScroll.classList.remove("set-white");
       logoScroll.classList.remove("logo-scrolled");
-      menuScroll.classList.remove("logo-scrolled");
+      menuScroll.classList.remove("menu-icon-hidden");
+      menuIconBlack.classList.remove("menu-icon-shown");
+      menuIconBlack.classList.add("menu-icon-hidden");
     }
   });
 },
