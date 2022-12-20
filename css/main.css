@@ -714,4 +714,18 @@ p {
   text-transform: uppercase;
   text-align: #3D3D3D;
   text-align: center;
+}
+
+.menu__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.menu__list .menu__link {
+  font-family: "Roboto Condensed";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 125%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */
